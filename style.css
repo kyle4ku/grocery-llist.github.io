@@ -1,0 +1,143 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgb(212, 225, 237);
+	--spacing: 2px;
+	--left-padding: 7px;
+	--padding: 2px;
+}
+.section-center {
+	width: 90vw;
+	max-width: 30rem;
+	margin: 0 auto;
+	margin-top: 12rem;
+	box-shadow: 0px 0px 3px 0.3px;
+	border-radius: 5px;
+	padding: 1rem;
+	transition: box-shadow 0.3s ease-out;
+	background: #fff;
+}
+.section-center:hover {
+	box-shadow: 0 0 3px 0.4px;
+}
+h1,
+h2,
+h3 {
+	text-transform: capitalize;
+	letter-spacing: var(--spacing);
+}
+h3 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+.form-control {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+.input-form {
+	background: rgb(228, 221, 221);
+	border-color: transparent;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	flex: 1 1 auto;
+	padding: var(--padding);
+	padding-left: var(--left-padding);
+}
+.submit-btn {
+	flex: 0 0 70px;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	background: lightblue;
+	border-color: transparent;
+	cursor: pointer;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	transition: all 0.3s linear;
+}
+.submit-btn:hover {
+	color: white;
+	background-color: lightskyblue;
+}
+.grocery-section {
+	visibility: hidden;
+	margin-top: 10px;
+}
+.groceryShowcase {
+	visibility: visible;
+}
+.grocery-item {
+	text-transform: capitalize;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	letter-spacing: 2px;
+	padding: var(--padding);
+	padding-left: var(--left-padding);
+	padding-right: var(--left-padding);
+	margin-bottom: 10px;
+	transition: all 0.3s linear;
+	cursor: pointer;
+}
+.grocery-item:hover {
+	background-color: rgb(212, 225, 237);
+	border-radius: 5px;
+}
+.title {
+	letter-spacing: 2px;
+}
+.btn-edit,
+.btn-delete {
+	padding: 2px;
+	border-color: transparent;
+	background: transparent;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+.btn-edit:hover {
+	background: lightgreen;
+	border-radius: 5px;
+	color: white;
+}
+.btn-delete:hover {
+	background: red;
+	border-radius: 5px;
+	color: white;
+}
+.clear-items {
+	border-color: transparent;
+	background: transparent;
+	cursor: pointer;
+	letter-spacing: 3px;
+	color: red;
+	width: 10rem;
+	margin: 0 auto;
+	display: grid;
+	align-items: center;
+	transition: color 0.3s linear;
+	margin-top: 30px;
+}
+.clear-items:hover {
+	color: darkred;
+}
+.alert {
+	text-transform: capitalize;
+	text-align: center;
+	width: 80%;
+	font-size: 1rem;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	margin: 0 auto;
+}
+.alert-warning {
+	background: orangered;
+	color: black;
+}
+.alert-success {
+	background: green;
+}
